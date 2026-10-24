@@ -34,7 +34,7 @@ def secret(name, default=None):
 DB_FILE = "messmate.db"                         # used only when no DATABASE_URL is set (local testing)
 DATABASE_URL = secret("DATABASE_URL")           # permanent cloud database (Neon / Supabase Postgres)
 USE_PG = bool(DATABASE_URL)
-QR_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "c:\\Users\\hp\\Downloads\\my_qr.png")  # keep my_qr.png beside app.py
+QR_FILE =    QR_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "my_qr.png")
 ADMIN_PASSWORD = secret("ADMIN_PASSWORD", "Admin923")  # set ADMIN_PASSWORD in the app secrets
 IST = timezone(timedelta(hours=5, minutes=30), "IST")  # cloud servers run on UTC, so dates are fixed to India time
 
